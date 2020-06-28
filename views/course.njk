@@ -8,7 +8,9 @@
 {% block about %}
 
   <section class="curso">
-    <iframe src="https://www.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe>
+    {# <iframe src="https://www.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe> #}
+    <h1>{{item.title}}</h1>
+    <p>{{item.description}}</p>
   </section>
 
 {% endblock %}
