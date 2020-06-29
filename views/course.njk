@@ -5,12 +5,12 @@
     
 {% endblock %}
 
-{% block about %}
+{% block content %}
 
   <section class="curso">
-    {# <iframe src="https://www.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe> #}
-    <h1>{{item.title}}</h1>
-    <p>{{item.description}}</p>
+    <iframe src="https://www.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe>
   </section>
 
 {% endblock %}
+
+{% block footer %}{% endblock %}

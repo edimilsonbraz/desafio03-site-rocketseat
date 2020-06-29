@@ -49,7 +49,7 @@ server.get("/courses/:id", function(req, res) {
     if(!course) {
         return res.send("Curso Not Found")
     }
-        return res.render("course", { course })
+        return res.render("course", { item: course })
 })
 
 server.use(function(req, res) {
