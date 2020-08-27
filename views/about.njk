@@ -13,10 +13,15 @@
         <div id="lista">           
                 <ul>
                     {% for lista in about.listas %}
-                        <li> {{lista.name}}</li>
-                    {% endfor %}                                
+                        <li><img src="{{ lista.img_icon }}"></li>
+                        
+                    {% endfor %}  
+                    {% for curso in about.cursos %}
+                    <span>{{ curso.linguagem}}</span>  
+                    {% endfor %}                             
                 </ul>            
         </div>  
     </div>    
 {% endblock %}
+
 

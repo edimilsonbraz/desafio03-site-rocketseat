@@ -20,15 +20,24 @@ server.get("/", function(req, res) {
 
 server.get("/about", function(req, res) {  
     const about = {
-        logo_url: "https://scontent.ffln4-1.fna.fbcdn.net/v/t1.0-9/104169738_687672685112542_1468337677738709328_n.png?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=bEpYvUGdhmwAX84vBlb&_nc_ht=scontent.ffln4-1.fna&oh=42865f744bc76dd27f654157a3b4f830&oe=5F106F73",
+        logo_url: "/img/rocketseat.png",
         name: "Rocketseat",
         description: 'Ensinamos as melhores tecnologias em programação direto ao ponto e do jeito certo. </br> Não perca mais tempo, venha codar essas tecnologias com a gente.',
         listas: [
-            { name: "ReactJS"},
-            { name: "React Native"},
-            { name: "NodeJS"},
-            { name: "JavaScript"}            
-        ]
+            { img_icon: "/img/JavaScript-icon.png"},
+            { img_icon: "/img/nodejs-icon.png"},
+            { img_icon: "/img/React.js-icon.png"},
+            { img_icon: "/img/react_Native-icon.png"},
+                      
+        ],
+        cursos: [
+            {linguagem: 'JavaScript'},
+            {linguagem: 'Node Js'},
+            {linguagem: 'React Js'},
+            {linguagem: 'React Native'},
+        ],
+        
+        prof: 'Maik Brito'
     }
 
     return res.render("about", { about}) 
